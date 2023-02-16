@@ -88,7 +88,7 @@ function ChangeProfile(props) {
         <View style={styles.container}>
             <StatusBar style="auto" />
             <View>
-                <Image source={{ uri: "https://files.ratelist.top/uploads/images/bs/41605/photos/67254e65fea4eeef8274ca6179361666-original.webp" }}
+                <Image source={require("../Images/cafe.png")}
                     style={styles.profileImage} />
             </View>
             <View style={[styles.inputView, { marginTop: vh(5) }]}>

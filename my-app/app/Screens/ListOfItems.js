@@ -75,7 +75,7 @@ function ListOfItems(props) {
                 }}>
                 <View style={styles.itemStyle}>
                     <Image
-                        source={{ uri: "https://files.ratelist.top/uploads/images/bs/41605/photos/67254e65fea4eeef8274ca6179361666-original.webp" }}
+                        source={require("../Images/cafe.png")}
                         style={styles.image}
                     />
                     <Text style={styles.item_name}>
@@ -107,7 +107,7 @@ function ListOfItems(props) {
                         props.navigation.navigate("ItemPage", { item: item })
                     }}>
                     <ImageBackground
-                        source={{ uri: "https://files.ratelist.top/uploads/images/bs/41605/photos/67254e65fea4eeef8274ca6179361666-original.webp" }}
+                       source={require("../Images/cafe.png")}
                         style={styles.alternativeItemStyle}
                         borderRadius={25}
                     >

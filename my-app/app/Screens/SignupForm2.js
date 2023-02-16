@@ -21,15 +21,14 @@ function Signup2(props, route) {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   handle_signup = () => {
-    fetch('https://d43d-46-211-73-176.eu.ngrok.io/core/users/', {
+    fetch('https://ccbf-178-137-165-225.eu.ngrok.io/api/api/user/', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-       // username: "fuckingDjango",
-        email_address: "emaillll@gmail.com",
+        email_address: "emadsqw@gmail.com",
         phone_number: "1234567890",
         first_name: "firstname",
         second_name: "lastname",

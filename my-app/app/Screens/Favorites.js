@@ -67,7 +67,7 @@ function Favorites(props) {
                 }}>
                 <View style={styles.itemStyle}>
                     <Image
-                        source={{ uri: "https://upmostly.com/wp-content/uploads/mugshot-6-2.jpeg" }}
+                        source={require("../Images/cafe.png")}
                         style={styles.image}
                     />
                     <Text style={styles.item_name}>

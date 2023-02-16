@@ -50,7 +50,7 @@ function ItemPage(props) {
             // Flat List Item
             <View style={styles.commentStyle}>
                 <Image
-                    source={{ uri: "https://files.ratelist.top/uploads/images/bs/41605/photos/67254e65fea4eeef8274ca6179361666-original.webp" }}
+                    source={require("../Images/cafe.png")}
                     style={styles.comment_image}
                 />
                 <View style={{ width: '80%', marginLeft: '20%' }}>
@@ -79,7 +79,7 @@ function ItemPage(props) {
             <View style={styles.container}>
                 <StatusBar style="auto" />
                 <Image
-                    source={{ uri: "https://files.ratelist.top/uploads/images/bs/41605/photos/67254e65fea4eeef8274ca6179361666-original.webp" }}
+                   source={require("../Images/cafe.png")}
                     style={styles.image}
                 />
                 <ViewMoreText
@@ -92,7 +92,7 @@ function ItemPage(props) {
                 </ViewMoreText>
                 <TouchableOpacity style={styles.order_button}
                     onPress={() => {
-                        console.log("order")
+                        props.navigation.navigate("Book")
                     }}
                 >
                     <Text style={styles.order_text}>Order</Text>

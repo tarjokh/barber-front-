@@ -14,11 +14,6 @@ function Welcome(props) {
     const netInfo = useNetInfo();
 
 
-
-    const Welcome = () => {
-
-    }
-
     return (
         <View style={styles.container}>
             <StatusBar style="auto" />
@@ -55,18 +50,17 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: "#CFE8DC",
-        justifyContent: "center",
         alignItems: "center",
     },
     weclome_text: {
-        marginTop: '80%',
+        marginTop:vh(45),
         fontSize: vw(11),
         fontWeight: '900',
     },
     signup_button: {
         width: vw(30),
         height: vw(10),
-        marginTop: "10%",
+        marginTop: vh(5),
         justifyContent: 'center',
         backgroundColor: "#5ACCE4",
         shadowColor: "#000",
@@ -77,7 +71,7 @@ const styles = StyleSheet.create({
     signin_button: {
         width: vw(30),
         height: vw(10),
-        marginTop: "40%",
+        marginTop: vh(20),
         justifyContent: 'center',
         backgroundColor: "#5ACCE4",
         shadowColor: "#000",

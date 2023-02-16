@@ -11,6 +11,12 @@ import ItemPage from "./Screens/ItemPage";
 import Favorites from "./Screens/Favorites";
 import NoInternetConnection from "./Screens/NoInternetConnection";
 import ChangeProfile from "./Screens/ChangeProfile";
+import History from "./Screens/History";
+import Reservation from "./Screens/Reservation";
+import Book from './Screens/Book';
+import BookDone from './Screens/BookDone';
+import SelectLanguage from './Screens/SelectLanguage';
+import Hairstyle from './Screens/Hairstyle';
 const Stack = createNativeStackNavigator();
 
 
@@ -39,6 +45,12 @@ function MyStack() {
       <Stack.Screen name="Favorites" component={Favorites} />
       <Stack.Screen name="NoInternetConnection" component={NoInternetConnection} />
       <Stack.Screen name="ChangeProfile" component={ChangeProfile} />
+      <Stack.Screen name="History" component={History} />
+      <Stack.Screen name="Reservation" component={Reservation} />
+      <Stack.Screen name="Book" component={Book} />
+      <Stack.Screen name="BookDone" component={BookDone} />
+      <Stack.Screen name="SelectLanguage" component={SelectLanguage} />
+      <Stack.Screen name="Hairstyle" component={Hairstyle} />
     </Stack.Navigator>
   );
 }

@@ -10,6 +10,7 @@ import {
   View,
   Image,
   ImageBackground,
+  ScrollView,
   TouchableOpacity,
   Dimensions
 } from "react-native";
@@ -20,113 +21,113 @@ function Home(props) {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Settings/>
+      <Settings />
       <Text style={styles.alinoText}>ALINO</Text>
-      <View style={styles.categories1}>
-        <TouchableOpacity
-          onPress={() => {
-            props.navigation.navigate("ListOfItems", {endpoint: "posts", name: "Beauty"})
-          }}>
-          <ImageBackground
-            source={require('../Images/beauty.png')}
-            style={styles.catecoryImage}
-            imageStyle={{ borderRadius: 15 }}
-          >
-            <Text style={styles.categoryName}>BEAUTY</Text>
-          </ImageBackground>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            props.navigation.navigate("ListOfItems", {endpoint: "posts", name: "Cafes"})
-          }}>
-          <ImageBackground
-            source={require('../Images/cafe.png')}
-            style={styles.catecoryImage}
-            imageStyle={{ borderRadius: 15 }}
-          >
-            <Text style={styles.categoryName}>RESTAURANTS & CAFES</Text>
-          </ImageBackground>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            props.navigation.navigate("ListOfItems", {endpoint: "posts", name: "Concerts"})
-          }}>
-          <ImageBackground
-            source={require('../Images/concerts.png')}
-            style={styles.catecoryImage}
-            imageStyle={{ borderRadius: 15 }}
-          >
-            <Text style={styles.categoryName}>CONCERTS</Text>
+          <View style={styles.categories1}>
+            <TouchableOpacity
+              onPress={() => {
+                props.navigation.navigate("Hairstyle")
+              }}>
+              <ImageBackground
+                source={require('../Images/beauty.png')}
+                style={styles.catecoryImage}
+                imageStyle={{ borderRadius: 15 }}
+              >
+                <Text style={styles.categoryName}>HAIRSTYLE</Text>
+              </ImageBackground>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                props.navigation.navigate("ListOfItems", { endpoint: "posts", name: "Cafes" })
+              }}>
+              <ImageBackground
+                source={require('../Images/cafe.png')}
+                style={styles.catecoryImage}
+                imageStyle={{ borderRadius: 15 }}
+              >
+                <Text style={styles.categoryName}>RESTAURANTS & CAFES</Text>
+              </ImageBackground>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                props.navigation.navigate("ListOfItems", { endpoint: "posts", name: "Concerts" })
+              }}>
+              <ImageBackground
+                source={require('../Images/concerts.png')}
+                style={styles.catecoryImage}
+                imageStyle={{ borderRadius: 15 }}
+              >
+                <Text style={styles.categoryName}>CONCERTS</Text>
 
-          </ImageBackground>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            props.navigation.navigate("ListOfItems", {endpoint: "posts", name: "Cinema"})
-          }}>
-          <ImageBackground
-            source={require('../Images/cinema.png')}
-            style={styles.catecoryImage}
-            imageStyle={{ borderRadius: 15 }}
-          >
-            <Text style={styles.categoryName}>CINEMA</Text>
+              </ImageBackground>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                props.navigation.navigate("ListOfItems", { endpoint: "posts", name: "Cinema" })
+              }}>
+              <ImageBackground
+                source={require('../Images/cinema.png')}
+                style={styles.catecoryImage}
+                imageStyle={{ borderRadius: 15 }}
+              >
+                <Text style={styles.categoryName}>CINEMA</Text>
 
-          </ImageBackground>
-        </TouchableOpacity>
-      </View>
-      <View style={styles.categories2}>
-        <TouchableOpacity
-          onPress={() => {
-            props.navigation.navigate("ListOfItems", {endpoint: "posts", name: "Sport"})
-          }}>
-          <ImageBackground
-            source={require('../Images/sport.png')}
-            style={styles.catecoryImage}
-            imageStyle={{ borderRadius: 15 }}
-          >
-            <Text style={styles.categoryName}>SPORT</Text>
+              </ImageBackground>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.categories2}>
+            <TouchableOpacity
+              onPress={() => {
+                props.navigation.navigate("ListOfItems", { endpoint: "posts", name: "Sport" })
+              }}>
+              <ImageBackground
+                source={require('../Images/sport.png')}
+                style={styles.catecoryImage}
+                imageStyle={{ borderRadius: 15 }}
+              >
+                <Text style={styles.categoryName}>SPORT</Text>
 
-          </ImageBackground>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            props.navigation.navigate("ListOfItems", {endpoint: "posts", name: "Health"})
-          }}>
-          <ImageBackground
-            source={require('../Images/health.png')}
-            style={styles.catecoryImage}
-            imageStyle={{ borderRadius: 15 }}
-          >
-            <Text style={styles.categoryName}>HEALTH</Text>
+              </ImageBackground>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                props.navigation.navigate("ListOfItems", { endpoint: "posts", name: "Health" })
+              }}>
+              <ImageBackground
+                source={require('../Images/health.png')}
+                style={styles.catecoryImage}
+                imageStyle={{ borderRadius: 15 }}
+              >
+                <Text style={styles.categoryName}>HEALTH</Text>
 
-          </ImageBackground>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            props.navigation.navigate("ListOfItems", {endpoint: "posts", name: "Theaters"})
-          }}>
-          <ImageBackground
-            source={require('../Images/theater.png')}
-            style={styles.catecoryImage}
-            imageStyle={{ borderRadius: 15 }}
-          >
-            <Text style={styles.categoryName}>THEATER</Text>
+              </ImageBackground>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                props.navigation.navigate("ListOfItems", { endpoint: "posts", name: "Theaters" })
+              }}>
+              <ImageBackground
+                source={require('../Images/theater.png')}
+                style={styles.catecoryImage}
+                imageStyle={{ borderRadius: 15 }}
+              >
+                <Text style={styles.categoryName}>THEATER</Text>
 
-          </ImageBackground>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            props.navigation.navigate("ListOfItems", {endpoint: "posts", name: "Travel"})
-          }}>
-          <ImageBackground
-            source={require('../Images/travel.png')}
-            style={styles.catecoryImage}
-            imageStyle={{ borderRadius: 15 }}
-          >
-            <Text style={styles.categoryName}>TRAVEL</Text>
-          </ImageBackground>
-        </TouchableOpacity>
-      </View>
+              </ImageBackground>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                props.navigation.navigate("ListOfItems", { endpoint: "posts", name: "Travel" })
+              }}>
+              <ImageBackground
+                source={require('../Images/travel.png')}
+                style={styles.catecoryImage}
+                imageStyle={{ borderRadius: 15 }}
+              >
+                <Text style={styles.categoryName}>TRAVEL</Text>
+              </ImageBackground>
+            </TouchableOpacity>
+          </View>
       <Footer />
     </View>
   );
@@ -138,7 +139,7 @@ const styles = StyleSheet.create({
   },
   bars_icon: {
     position: 'absolute',
-    marginTop:  Dimensions.get("window").height * 0.07,
+    marginTop: Dimensions.get("window").height * 0.07,
     marginLeft: vw(3),
   },
   bottom_menu: {
@@ -164,7 +165,7 @@ const styles = StyleSheet.create({
   },
   categories1: {
     position: 'absolute',
-    marginTop:  Dimensions.get("window").height * 0.12,
+    marginTop: Dimensions.get("window").height * 0.12,
     marginLeft: vw(5),
     width: vw(40)
   },

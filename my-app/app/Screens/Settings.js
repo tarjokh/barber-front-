@@ -77,7 +77,7 @@ function Settings(props) {
                 </TouchableOpacity>
                 <TouchableOpacity
                     onPress={() => {
-                        console.log("ksjfksj")
+                        props.navigation.navigate("History")
                     }}>
                     <View style={[styles.small_rectangle, { marginTop: vh(1) }]}>
                         <MaterialIcons
@@ -90,7 +90,11 @@ function Settings(props) {
                     </View>
                 </TouchableOpacity>
                 <View style={styles.big_rectangle}>
-                    <TouchableOpacity>
+                    <TouchableOpacity
+                    onPress={() => {
+                        props.navigation.navigate("SelectLanguage")
+                    }}
+                    >
                         <View style={styles.language}>
                             <MaterialIcons
                                 name="language"

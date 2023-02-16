@@ -22,7 +22,7 @@ function Footer(props) {
           size={vw(8)}
           style={styles.homeIcon}
           onPress={() => {
-            console.log('1')
+            navigation.navigate("Home")
           }}
         />
         <EntypoIcon
@@ -38,7 +38,7 @@ function Footer(props) {
           size={vw(8)}
           style={styles.historyIcon}
           onPress={() => {
-            console.log('3')
+            navigation.navigate("Reservation")
           }}
         />
       </View>
