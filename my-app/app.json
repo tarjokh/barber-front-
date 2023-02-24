@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "my-app",
+    "slug": "my-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./app/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vvitalii.myapp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.inglorious_masters.alino",
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "favicon": "./app/assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f0556b26-a373-4e4f-bac7-3363a8654bbb"
+      }
+    }
+  }
+}
