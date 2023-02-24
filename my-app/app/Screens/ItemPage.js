@@ -79,7 +79,7 @@ function ItemPage(props) {
             <View style={styles.container}>
                 <StatusBar style="auto" />
                 <Image
-                   source={require("../Images/cafe.png")}
+                   source={{uri: props.route.params.item.image}}
                     style={styles.image}
                 />
                 <ViewMoreText
@@ -88,10 +88,11 @@ function ItemPage(props) {
                     renderViewMore={renderViewMore}
                     renderViewLess={renderViewLess}
                 >
-                    <Text> {props.route.params.item.body} </Text>
+                    <Text> {props.route.params.item.description} </Text>
                 </ViewMoreText>
                 <TouchableOpacity style={styles.order_button}
                     onPress={() => {
+                        console.log(props.route.params.item.rates[0].stars)
                         props.navigation.navigate("Book")
                     }}
                 >

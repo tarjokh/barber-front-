@@ -26,8 +26,7 @@
         "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.inglorious_masters.alino",
-      "googleServicesFile": "./google-services.json"
+      "package": "com.inglorious_masters.alino"
     },
     "web": {
       "favicon": "./app/assets/favicon.png"

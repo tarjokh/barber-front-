@@ -32,7 +32,7 @@ function ListOfItems(props) {
     const [viewName, SetViewName] = useState("view-carousel")
 
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/' + props.route.params.endpoint)
+        fetch('https://a9be-178-137-165-225.eu.ngrok.io/api/' + props.route.params.endpoint)
             .then((response) => response.json())
             .then((responseJson) => {
                 setFilteredDataSource(responseJson);
@@ -75,14 +75,14 @@ function ListOfItems(props) {
                 }}>
                 <View style={styles.itemStyle}>
                     <Image
-                        source={require("../Images/cafe.png")}
+                        source={{uri: item.image}}
                         style={styles.image}
                     />
                     <Text style={styles.item_name}>
-                        {item.title.split(' ').slice(0, 2).join(' ')}
+                        {item.name}
                     </Text>
                     <Text style={styles.item_description}>
-                        {item.body.substring(0, 15)}
+                        {item.description}
                         {"..."}
                     </Text>
                     <EntypoIcon

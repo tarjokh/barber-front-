@@ -41,15 +41,14 @@ function LoginForm(props) {
   }
 
   handle_login = async (data) => {
-    fetch('https://ccbf-178-137-165-225.eu.ngrok.io/login/' + email + '/', {
+    fetch('https://07a8-178-137-165-225.eu.ngrok.io/token-auth/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        username: email,
+        email: email,
         password: password,
-
       }),
     })
       .then(res => {

@@ -38,7 +38,7 @@ function Home(props) {
             </TouchableOpacity>
             <TouchableOpacity
               onPress={() => {
-                props.navigation.navigate("ListOfItems", { endpoint: "posts", name: "Cafes" })
+                props.navigation.navigate("ListOfItems", { endpoint: "restaurants", name: "Cafes" })
               }}>
               <ImageBackground
                 source={require('../Images/cafe.png')}
